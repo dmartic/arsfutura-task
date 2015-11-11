@@ -150,8 +150,10 @@ header img{
 
 
 /* Header content space */
-.right-margin {
-  margin-right: 30px;
+@media (min-width: 768px) {
+    .right-margin {
+        margin-right: 30px;
+    }
 }
 
 /* Heading top margin */
@@ -223,6 +225,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
   .feature-one-icon {
     background-image: url(../img/feature-one-icon@2x.png);
+    background-size: 100%;
   }
 
 }
@@ -242,6 +245,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
   .feature-two-icon {
     background-image: url(../img/feature-two-icon@2x.png);
+    background-size: 100%;
   }
 
 }
@@ -261,6 +265,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
   .feature-three-icon {
     background-image: url(../img/feature-three-icon@2x.png);
+    background-size: 100%;
   }
 
 }
@@ -295,6 +300,10 @@ footer {
 
 .center-content a {
   display: inline-block;
+}
+
+.center-content a:last-child img {
+    margin-right: 0;
 }
 
 @media(max-width:768px) {
